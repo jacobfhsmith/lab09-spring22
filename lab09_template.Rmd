@@ -1,0 +1,62 @@
+---
+title: "Lab 09"
+author: ''
+subtitle: 'Due April 15 at 11:59 PM'
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE)
+```
+
+
+```{r load-packages}
+library(tidyverse)
+library(tidymodels)
+library(knitr)
+```
+
+```{r load-data}
+parkinsons = read_csv("parkinsons.csv")
+```
+
+
+# Exercise 1
+
+```{r rm-underscore}
+park = parkinsons %>%
+  mutate(name = str_remove_all(name, "_[^_]+$"))
+```
+
+```{r ex-1}
+# code here
+```
+
+# Exercise 2
+
+```{r ex-2}
+# code here
+```
+
+# Exercise 3
+
+```{r ex-3}
+# code here
+```
+
+# Exercise 4
+```{r ex-4}
+# code here
+```
+
+# Exercise 5
+
+```{r ex-5}
+# code here
+```
